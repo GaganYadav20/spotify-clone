@@ -1,4 +1,10 @@
 body {
-  background-color: black;
-  color: white;
+    font-family: "Montserrat", sans-serif;
 }
+.left{
+  width: 50vw;
+}
+.right{
+  width: 50vw;
+}
+
