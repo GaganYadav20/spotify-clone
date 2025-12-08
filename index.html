@@ -21,34 +21,338 @@
     <link rel="stylesheet" href="utility.css" />
   </head>
   <body>
-    <nav >
+    <nav>
       <div class="left-half">
         <div class="logo"><i class="fa-brands fa-spotify"></i></div>
         <div class="home"><i class="fa-solid fa-house"></i></div>
         <div class="search">
-          <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-          <input type="text"class="input-box" placeholder="What do you want to play?">
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <input
+            type="text"
+            class="input-box"
+            placeholder="What do you want to play?"
+          />
           <div class="browse"><i class="fa-solid fa-folder-open"></i></div>
         </div>
       </div>
       <div class="nav-right">
-            <div class="nav-links">
-                <a href="#" class="nav-link">Premium</a>
-                <a href="#" class="nav-link">Support</a>
-                <a href="#" class="nav-link">Download</a>
-            </div>
-            
-            <div class="divider"></div>
-            
-            <button class="install-btn">
-                <i class="fa-regular fa-circle-down"></i>
-                Install App
-            </button>
-            
-            <button class="auth-btn signup-btn">Sign up</button>
-            <button class="auth-btn login-btn">Log in</button>
+        <div class="nav-links">
+          <a href="#" class="nav-link">Premium</a>
+          <a href="#" class="nav-link">Support</a>
+          <a href="#" class="nav-link">Download</a>
         </div>
+
+        <div class="divider"></div>
+
+        <button class="install-btn">
+          <i class="fa-regular fa-circle-down"></i>
+          Install App
+        </button>
+
+        <button class="auth-btn signup-btn">Sign up</button>
+        <button class="auth-btn login-btn">Log in</button>
+      </div>
     </nav>
-    <div class="container flex"></div>
+    <!-- Main -->
+    <div class="container">
+      <div class="left-side">
+        <aside class="sidebar">
+          <div class="library-header">
+            <div class="library-title">Your Library</div>
+            <button class="add-btn">+</button>
+          </div>
+
+          <div class="card">
+            <h2 class="card-title">Create your first playlist</h2>
+            <p class="card-description">It's easy, we'll help you</p>
+            <button class="card-btn">Create playlist</button>
+          </div>
+
+          <div class="card">
+            <h2 class="card-title">Let's find some podcasts to follow</h2>
+            <p class="card-description">
+              We'll keep you updated on new episodes
+            </p>
+            <button class="card-btn">Browse podcasts</button>
+          </div>
+
+          <footer class="footer">
+            <div class="footer-links">
+              <a href="#" class="footer-link">Legal</a>
+              <a href="#" class="footer-link">Safety & Privacy Center</a>
+              <a href="#" class="footer-link">Privacy Policy</a>
+              <a href="#" class="footer-link">Cookies</a>
+              <a href="#" class="footer-link">About Ads</a>
+              <a href="#" class="footer-link">Accessibility</a>
+            </div>
+
+            <button class="cookies-btn">Cookies</button>
+
+            <button class="language-btn">
+              <div class="globe-icon"></div>
+              English
+            </button>
+          </footer>
+        </aside>
+      </div>
+      <div class="right-side">
+        <div>
+          <!-- Trending Songs Section -->
+          <section class="section">
+            <div class="section-header">
+              <h2 class="section-title">Trending songs</h2>
+              <a href="#" class="show-all">Show all</a>
+            </div>
+
+            <div class="songs-container">
+              <div class="song-card">
+                <div style="position: relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=400&fit=crop"
+                    alt="Sitaare"
+                    class="song-image"
+                  />
+                  <button class="play-btn"></button>
+                </div>
+                <div class="song-title">Sitaare (From "Ikkis")</div>
+                <div class="song-artist">
+                  Arijit Singh, White Noise Collectives, Amitabh...
+                </div>
+              </div>
+
+              <div class="song-card">
+                <div style="position: relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=400&h=400&fit=crop"
+                    alt="Aawaara Angaara"
+                    class="song-image"
+                  />
+                  <button class="play-btn"></button>
+                </div>
+                <div class="song-title">Aawaara Angaara</div>
+                <div class="song-artist">
+                  A.R. Rahman, Faheem Abdullah, Irshad Kamil
+                </div>
+              </div>
+
+              <div class="song-card">
+                <div style="position: relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1459664018906-085c36f472af?w=400&h=400&fit=crop"
+                    alt="bargad"
+                    class="song-image"
+                  />
+                  <button class="play-btn"></button>
+                </div>
+                <div class="song-title">bargad</div>
+                <div class="song-artist">sufr, Arpit Bala, toorjo dey</div>
+              </div>
+
+              <div class="song-card">
+                <div style="position: relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400&h=400&fit=crop"
+                    alt="Hum Dono"
+                    class="song-image"
+                  />
+                  <button class="play-btn"></button>
+                </div>
+                <div class="song-title">
+                  Hum Dono (From "Tu Meri Main Tera Main...
+                </div>
+                <div class="song-artist">
+                  Vishal-Shekhar, Shekhar Ravjiani, Shruti Pathak,...
+                </div>
+              </div>
+
+              <div class="song-card">
+                <div style="position: relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=400&h=400&fit=crop"
+                    alt="Gehra Hua"
+                    class="song-image"
+                  />
+                  <button class="play-btn"></button>
+                </div>
+                <div class="song-title">Gehra Hua</div>
+                <div class="song-artist">
+                  Shashwat Sachdev, Arijit Singh, Irshad Kamil,...
+                </div>
+              </div>
+
+              <div class="song-card">
+                <div style="position: relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=400&h=400&fit=crop"
+                    alt="KALYANI"
+                    class="song-image"
+                  />
+                  <button class="play-btn"></button>
+                </div>
+                <div class="song-title">KALYANI</div>
+                <div class="song-artist">ARJN, KDS, Sez On The Beat</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Popular Artists Section -->
+          <section class="section">
+            <div class="section-header">
+              <h2 class="section-title">Popular artists</h2>
+              <a href="#" class="show-all">Show all</a>
+            </div>
+
+            <div class="artists-container">
+              <div class="artist-card">
+                <div class="artist-image-wrapper">
+                  <img
+                    src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop"
+                    alt="Pritam"
+                    class="artist-image"
+                  />
+                  <button class="play-btn-artist"></button>
+                </div>
+                <div class="artist-name">Pritam</div>
+                <div class="artist-type">Artist</div>
+              </div>
+
+              <div class="artist-card">
+                <div class="artist-image-wrapper">
+                  <img
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop"
+                    alt="A.R. Rahman"
+                    class="artist-image"
+                  />
+                  <button class="play-btn-artist"></button>
+                </div>
+                <div class="artist-name">A.R. Rahman</div>
+                <div class="artist-type">Artist</div>
+              </div>
+
+              <div class="artist-card">
+                <div class="artist-image-wrapper">
+                  <img
+                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop"
+                    alt="Sachin-Jigar"
+                    class="artist-image"
+                  />
+                  <button class="play-btn-artist"></button>
+                </div>
+                <div class="artist-name">Sachin-Jigar</div>
+                <div class="artist-type">Artist</div>
+              </div>
+
+              <div class="artist-card">
+                <div class="artist-image-wrapper">
+                  <img
+                    src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop"
+                    alt="Vishal-Shekhar"
+                    class="artist-image"
+                  />
+                  <button class="play-btn-artist"></button>
+                </div>
+                <div class="artist-name">Vishal-Shekhar</div>
+                <div class="artist-type">Artist</div>
+              </div>
+
+              <div class="artist-card">
+                <div class="artist-image-wrapper">
+                  <img
+                    src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=400&h=400&fit=crop"
+                    alt="Sachet & Parampara"
+                    class="artist-image"
+                  />
+                  <button class="play-btn-artist"></button>
+                </div>
+                <div class="artist-name">Sachet & Parampara</div>
+                <div class="artist-type">Artist</div>
+              </div>
+
+              <div class="artist-card">
+                <div class="artist-image-wrapper">
+                  <img
+                    src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=400&h=400&fit=crop"
+                    alt="Tanishk Bagchi"
+                    class="artist-image"
+                  />
+                  <button class="play-btn-artist"></button>
+                </div>
+                <div class="artist-name">Tanishk Bagchi</div>
+                <div class="artist-type">Artist</div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <footer class="footer">
+          <div class="footer-content">
+            <div class="footer-column">
+              <h3>Company</h3>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">For the Record</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3>Communities</h3>
+              <ul>
+                <li><a href="#">For Artists</a></li>
+                <li><a href="#">Developers</a></li>
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Investors</a></li>
+                <li><a href="#">Vendors</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3>Useful links</h3>
+              <ul>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Free Mobile App</a></li>
+                <li><a href="#">Popular by Country</a></li>
+                <li><a href="#">Import your music</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3>Spotify Plans</h3>
+              <ul>
+                <li><a href="#">Premium Lite</a></li>
+                <li><a href="#">Premium Standard</a></li>
+                <li><a href="#">Premium Platinum</a></li>
+                <li><a href="#">Premium Student</a></li>
+                <li><a href="#">Spotify Free</a></li>
+              </ul>
+            </div>
+
+            <div class="social-icons">
+              <button class="social-btn" aria-label="Instagram">
+                <div class="instagram-icon"></div>
+              </button>
+              <button class="social-btn" aria-label="Twitter">
+                <div class="twitter-icon">
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                    />
+                  </svg>
+                </div>
+              </button>
+              <button class="social-btn" aria-label="Facebook">
+                <div class="facebook-icon"></div>
+              </button>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <p>© 2025 Spotify AB</p>
+          </div>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
