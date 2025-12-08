@@ -21,10 +21,6 @@ nav {
   display: flex;
   align-items: center;
 }
-.right-half {
-  display: flex;
-  align-items: center;
-}
 
 .logo {
   font-size: 2.1rem;
@@ -71,8 +67,12 @@ nav {
   color: white;
 }
 .input-box {
-  width: 80%;
+  width: 78%;
   height: inherit;
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+  border-right: 1px solid rgb(179, 179, 179);
   background-color: #363535;
 }
 .nav-right {
@@ -122,36 +122,6 @@ nav {
   color: #fff;
 }
 
-.install-icon {
-  width: 20px;
-  height: 20px;
-  border: 2px solid currentColor;
-  border-radius: 50%;
-  position: relative;
-}
-
-.install-icon::before {
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 10px;
-  background: currentColor;
-  left: 50%;
-  top: 2px;
-  transform: translateX(-50%);
-}
-
-.install-icon::after {
-  content: "";
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  border-left: 2px solid currentColor;
-  border-bottom: 2px solid currentColor;
-  left: 50%;
-  bottom: 2px;
-  transform: translateX(-50%) rotate(-45deg);
-}
 
 .auth-btn {
   padding: 0 32px;
@@ -180,4 +150,5 @@ nav {
 .login-btn {
   background: #fff;
   color: #000;
+  margin-right: 2px;
 }
