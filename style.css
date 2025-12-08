@@ -45,3 +45,142 @@ nav{
   color: white;
   transform: scale(1.05);
 }
+.search{
+  background-color: rgb(61, 61, 61);
+  display: flex;
+  height: 3rem;
+  align-items: center;
+  width: 30rem;
+  border-radius: 20rem;
+}
+
+.search:hover{
+  background-color: #363535;
+  border: 1px solid rgb(30, 30, 30);
+}
+
+.search-icon{
+  font-size: 1.5rem;
+  color:rgb(134, 132, 132) ;
+  padding: 0 0.7rem;
+}
+.browse{
+  font-size: 1.5rem;
+  color:rgb(134, 132, 132) ;
+  padding: 0 0.7rem;
+}
+
+.search:hover .search-icon{
+  color: white;
+}
+.input-box{
+  width: 80%;
+  height: inherit;
+  background-color: #363535;
+}
+.nav-right {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: #b3b3b3;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .nav-link:hover {
+            color: #fff;
+        }
+
+        .divider {
+            width: 1px;
+            height: 32px;
+            background: #282828;
+        }
+
+        .install-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: transparent;
+            border: none;
+            color: #b3b3b3;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .install-btn:hover {
+            color: #fff;
+        }
+
+        .install-icon {
+            width: 20px;
+            height: 20px;
+            border: 2px solid currentColor;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .install-icon::before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 10px;
+            background: currentColor;
+            left: 50%;
+            top: 2px;
+            transform: translateX(-50%);
+        }
+
+        .install-icon::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            border-left: 2px solid currentColor;
+            border-bottom: 2px solid currentColor;
+            left: 50%;
+            bottom: 2px;
+            transform: translateX(-50%) rotate(-45deg);
+        }
+
+        .auth-btn {
+            padding: 0 32px;
+            height: 48px;
+            border-radius: 24px;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            border: none;
+            transition: transform 0.2s;
+        }
+
+        .auth-btn:hover {
+            transform: scale(1.04);
+        }
+
+        .signup-btn {
+            background: transparent;
+            color: #a7a7a7;
+        }
+
+        .signup-btn:hover {
+            color: #fff;
+        }
+
+        .login-btn {
+            background: #fff;
+            color: #000;
+        }
